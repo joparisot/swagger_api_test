@@ -19,6 +19,7 @@ gem 'autoprefixer-rails'
 
 gem "pundit"
 gem "simple_token_authentication"
+gem 'swagger-docs'
 
 group :development, :test do
   gem 'binding_of_caller'
