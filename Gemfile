@@ -21,6 +21,12 @@ gem "pundit"
 gem "simple_token_authentication"
 gem 'swagger-docs'
 
+# Important (I think) to make swagger ui work
+group :doc do
+  # bundle exec rake doc:rails generates the API under doc/api.
+  gem 'sdoc', require: false
+end
+
 group :development, :test do
   gem 'binding_of_caller'
   gem 'better_errors'
